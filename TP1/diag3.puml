@@ -1,14 +1,15 @@
-@startuml diagramaEJ1
-
-class Matriz {
-    -int filas
-    -int columnas
-    -int **A
-    +Matriz(int nfilas, int ncolumnas)
-    +void crear()
-    +void llenar()
-    +void mostrar()
-    +void liberar()
+@startuml Ejercicio3
+class Coordenada{
+    -int x
+    -int y
+    -int z
+    -int tiempo
+    -bool estado_luz
+    +Coordenada(int x, int y, int z, tiempo,estado_luz)
 }
 
+class Dron{
+    -Coordenada *coordenadas
+    +void agregar_coordenada(Coordenada c)
+}
 @enduml
