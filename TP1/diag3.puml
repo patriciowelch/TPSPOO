@@ -1,4 +1,10 @@
 @startuml Ejercicio3
+skinparam BackgroundColor #1f1111
+skinparam class {
+    BackgroundColor #fa0000
+    ArrowColor Black
+    BorderColor Black
+}
 class Coordenada{
     -int x
     -int y

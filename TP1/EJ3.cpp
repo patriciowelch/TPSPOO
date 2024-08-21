@@ -40,15 +40,14 @@ public:
 
 int main() {
     Dron dron;
-    string path = "C://Users//pato//Documents//UNIVERSIDAD//8S//POO//TPSPOO//TP1//coords.txt";
+    string path = "G://Otros ordenadores//Mi PC//UNIVERSIDAD//8S//POO//TPSPOO//TP1//coords.txt";
     ifstream archivo(path.c_str());
     if (archivo.is_open()) {
         cout << "Archivo Abierto" << endl;
         int x, y, z, tiempo;
+        x=1;
         bool estado_luz;
         while (archivo >> x >> y >> z >> tiempo >> estado_luz) {
-            cout << "Leyendo" << endl; // Depuracin
-            cout << "Leyendo coordenada: " << x << " " << y << " " << z << " " << tiempo << " " << estado_luz << endl; // Depuración
             Coordenada c(x, y, z, tiempo, estado_luz);
             dron.agregar_coordenada(c);
         }
