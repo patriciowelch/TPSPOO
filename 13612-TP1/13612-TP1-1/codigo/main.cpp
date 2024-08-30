@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include <iostream>
 #include <time.h>
 using namespace std;
@@ -20,6 +18,7 @@ class Matriz{
 Matriz::Matriz(int nfilas, int ncolumnas){
     this->filas = nfilas;
     this->columnas = ncolumnas;
+    this->crear();
 }
 
 void Matriz::crear(){
@@ -57,7 +56,6 @@ void Matriz::liberar(){
 int main(void){
     srand(time(NULL));
     Matriz M(6,10);
-    M.crear();
     M.llenar();
     M.mostrar();
     M.liberar();

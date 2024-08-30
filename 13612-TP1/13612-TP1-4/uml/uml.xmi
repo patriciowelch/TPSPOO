@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://schema.omg.org/spec/UML/2.1">
+  <xmi:Documentation exporter="umbrello uml modeller 2.38.70-fa7cb2c (experimental) (Applications 24.11.70) http://umbrello.kde.org" exporterVersion="2.0.4"/>
+  <uml:Model xmi:id="m1" name="UML Model">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="folder" name="folder"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="dataType" name="dataType"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="constructor" name="constructor"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Logical_View" name="Logical View" stereotype="folder">
+      <uml:Package xmi:id="Datatypes" name="Datatypes" stereotype="folder">
+        <packagedElement xmi:type="uml:DataType" xmi:id="uNwz5GRqO6icJ" name="char" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uJEetpalS57Sf" name="int"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="usUL9uj0mVWJ3" name="float"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uWlEDYHODBqz7" name="double" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uOXa1MYRXoB1J" name="bool"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u0iZdztocqVJI" name="string" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uUC1NASPOlT5h" name="unsigned char" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ul6pfXbMtHonY" name="signed char" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ugo8XPnRPZUlY" name="unsigned int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u1y3gRvQBcr43" name="signed int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ufyJQ3ZFRzz9K" name="short int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u6esUet0xrTLf" name="unsigned short int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uZankYTzcW9Ex" name="signed short int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uqVsWbtQFVmNy" name="long int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uIxxqk2XlZ0b8" name="signed long int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uRy4CdjTiLITZ" name="unsigned long int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uymyFkOUJKfRB" name="long double" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uiJ3TVhGlL5aq" name="wchar_t" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u2MkQpgYK31Mm" name="array" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uweD2ZEPIcOlS" name="tuple" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uUl7Y2UEFYMM7" name="list" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uwYdrL9UpCKj7" name="long" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uzxXN4miLaUju" name="dict" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uSq9e8eaZDjHI" name="object" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uvw8bEjbVnJGq" name="set" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u706qimBoRIz0" name="str" stereotype="dataType"/>
+      </uml:Package>
+      <packagedElement xmi:type="uml:Class" xmi:id="uMydPXq8pLhON" name="Dato">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uo4pRZNLjBAj6" name="Presion" visibility="private" type="usUL9uj0mVWJ3"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uasfs8SHsaJFl" name="Humedad" visibility="private" type="uJEetpalS57Sf"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u7vU6RvEL6vYg" name="Temperatura" visibility="private" type="usUL9uj0mVWJ3"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="usaY6POxCDrT6" name="__init__" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uETsNNAz2eJVm" name="Temperatura" visibility="private" type="usUL9uj0mVWJ3" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u175QDnXQaILZ" name="Presion" visibility="private" type="usUL9uj0mVWJ3" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ulik41PY8kGcR" name="Humedad" visibility="private" type="uJEetpalS57Sf" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uAJKh7nJ7oE4F" name="get_Temperatura">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uAhDvW9mZfKUc" type="usUL9uj0mVWJ3" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ueVgP67OxBVHx" name="get_Presion">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u6VpIPWUfiuE7" type="usUL9uj0mVWJ3" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ujIKtMeiuimJi" name="get_Humedad" comment="&#9;&#9;&#9;&#9;&#9;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uNpjS17XwTiZY" type="uJEetpalS57Sf" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uDO2hyBSVNLw3" name="str__" visibility="private">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uIRydEE3My5aH" type="u706qimBoRIz0" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="ulpMA8s9mawrk" name="Simulador">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uAxuC7bkjEOuR" name="temperatura_max" visibility="private" type="uJEetpalS57Sf" initialValue="0"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uR9vpKvAzKzk2" name="presion_prom" visibility="private" type="uJEetpalS57Sf" initialValue="0"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ul1dnFBfgULgY" name="datos" visibility="private" type="uMydPXq8pLhON" initialValue="[]"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="umniIf2mRNED8" name="__init__" stereotype="constructor"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uupe4PuiGyuEA" name="generar_datos">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uuhe3bYoVyZ0z" name="N" visibility="private" type="uJEetpalS57Sf" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uFwPezmO4Xz6P" name="listar_datos"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u0ZCnuIr1FZOw" name="get_temperatura_max">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uOxejXmybCY8Q" type="u706qimBoRIz0" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uJVirPX5rczRO" name="get_presion_prom">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uRjZ0eCJDRy2b" type="u706qimBoRIz0" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <xmi:Extension extender="umbrello">
+        <diagrams resolution="96">
+          <diagram xmi.id="uZGtBm3ZMjhIl" name="class diagram" type="1" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffc0" font="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showdocumentation="0" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="100" canvasheight="800" canvaswidth="1100" isopen="1">
+            <widgets>
+              <classwidget xmi.id="ulpMA8s9mawrk" localid="uE0hIr30yucfL" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" autoresize="1" x="568" y="401" width="160" height="117" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601" showdocumentation="0"/>
+              <classwidget xmi.id="uMydPXq8pLhON" localid="umzXyHUfs7JG6" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" autoresize="1" x="482" y="244" width="379" height="117" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601" showdocumentation="0"/>
+            </widgets>
+            <messages/>
+            <associations>
+              <assocwidget xmi.id="ul1dnFBfgULgY" localid="ueUMHMREt7mLl" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="1" visibilityB="1" changeabilityA="900" changeabilityB="900" widgetaid="ulpMA8s9mawrk" widgetbid="uMydPXq8pLhON" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uSMdR6dOkVtvL" localid="uRCjw5YSBRaFl" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" autoresize="1" x="664" y="363" width="28" height="17" isinstance="0" showstereotype="2" text="0..*" pretext="" posttext="" role="702"/>
+                <floatingtext xmi.id="uFZ7fZmN1xM6v" localid="uPXCEEidRGpoK" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" autoresize="1" x="607.416" y="363" width="39" height="17" isinstance="0" showstereotype="2" text="datos" pretext="-" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="656.756" starty="401"/>
+                  <endpoint endx="662.744" endy="361"/>
+                </linepath>
+              </assocwidget>
+            </associations>
+          </diagram>
+        </diagrams>
+      </xmi:Extension>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="Use_Case_View" name="Use Case View" stereotype="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Component_View" name="Component View" stereotype="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Deployment_View" name="Deployment View" stereotype="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Entity_Relationship_Model" name="Entity Relationship Model" stereotype="folder"/>
+  </uml:Model>
+  <xmi:Extension extender="umbrello">
+    <docsettings viewid="uZGtBm3ZMjhIl" documentation="" uniqueid="uRCjw5YSBRaFl"/>
+    <listview>
+      <listitem id="Views" type="800" open="1">
+        <listitem id="Component_View" type="821" open="1"/>
+        <listitem id="Deployment_View" type="827" open="1"/>
+        <listitem id="Entity_Relationship_Model" type="836" open="1"/>
+        <listitem id="Logical_View" type="801" open="1">
+          <listitem id="uZGtBm3ZMjhIl" type="807" label="class diagram" open="0"/>
+          <listitem id="Datatypes" type="830" open="0">
+            <listitem id="u2MkQpgYK31Mm" type="829" open="1"/>
+            <listitem id="uOXa1MYRXoB1J" type="829" open="1"/>
+            <listitem id="uzxXN4miLaUju" type="829" open="1"/>
+            <listitem id="usUL9uj0mVWJ3" type="829" open="1"/>
+            <listitem id="uJEetpalS57Sf" type="829" open="1"/>
+            <listitem id="uUl7Y2UEFYMM7" type="829" open="1"/>
+            <listitem id="uwYdrL9UpCKj7" type="829" open="1"/>
+            <listitem id="uSq9e8eaZDjHI" type="829" open="1"/>
+            <listitem id="uvw8bEjbVnJGq" type="829" open="1"/>
+            <listitem id="u706qimBoRIz0" type="829" open="1"/>
+            <listitem id="uweD2ZEPIcOlS" type="829" open="1"/>
+          </listitem>
+          <listitem id="uMydPXq8pLhON" type="813" open="1">
+            <listitem id="usaY6POxCDrT6" type="815" open="0"/>
+            <listitem id="ujIKtMeiuimJi" type="815" open="0"/>
+            <listitem id="ueVgP67OxBVHx" type="815" open="0"/>
+            <listitem id="uAJKh7nJ7oE4F" type="815" open="0"/>
+            <listitem id="uasfs8SHsaJFl" type="814" open="0"/>
+            <listitem id="uo4pRZNLjBAj6" type="814" open="0"/>
+            <listitem id="uDO2hyBSVNLw3" type="815" open="0"/>
+            <listitem id="u7vU6RvEL6vYg" type="814" open="0"/>
+          </listitem>
+          <listitem id="ulpMA8s9mawrk" type="813" open="1">
+            <listitem id="umniIf2mRNED8" type="815" open="0"/>
+            <listitem id="ul1dnFBfgULgY" type="814" open="0"/>
+            <listitem id="uupe4PuiGyuEA" type="815" open="0"/>
+            <listitem id="uJVirPX5rczRO" type="815" open="0"/>
+            <listitem id="u0ZCnuIr1FZOw" type="815" open="0"/>
+            <listitem id="uFwPezmO4Xz6P" type="815" open="0"/>
+            <listitem id="uR9vpKvAzKzk2" type="814" open="0"/>
+            <listitem id="uAxuC7bkjEOuR" type="814" open="0"/>
+          </listitem>
+        </listitem>
+        <listitem id="Use_Case_View" type="802" open="1"/>
+      </listitem>
+    </listview>
+    <codegeneration>
+      <codegenerator language="Python">
+        <sourcecode id="usaY6POxCDrT6" value="self._Temperatura=Temperatura&#10;self._Presion=Presion&#10;self._Humedad=Humedad&#10;"/>
+        <sourcecode id="uAJKh7nJ7oE4F" value="return self._Temperatura&#10;"/>
+        <sourcecode id="ueVgP67OxBVHx" value="return self._Presion&#10;"/>
+        <sourcecode id="ujIKtMeiuimJi" value="return self._Humedad&#10;"/>
+        <sourcecode id="uDO2hyBSVNLw3" value="return f&quot;Temperatura: {self._Temperatura}, Presion: {self._Presion}, Humedad: {self._Humedad}&quot;"/>
+        <sourcecode id="umniIf2mRNED8" value="self.datos=[]&#10;self.temperatura_max=0&#10;self.presion_prom=0&#10;"/>
+        <sourcecode id="uupe4PuiGyuEA" value="for i in range(N):&#10;  dato=Dato(random.uniform(-10,40),random.uniform(900,1100),random.randint(0,100))&#10;  self.datos.append(dato)&#10;&#10;"/>
+        <sourcecode id="uFwPezmO4Xz6P" value="for dato in self.datos:&#10;  print(dato.__str__())&#10;&#10;"/>
+        <sourcecode id="u0ZCnuIr1FZOw" value="self.temperatura_max=0&#10;for dato in self.datos:&#10;  if dato.get_Temperatura()&gt;self.temperatura_max:&#10;    self.temperatura_max=dato.get_Temperatura()&#10;&#10;&#10;return self.temperatura_max&#10;"/>
+        <sourcecode id="uJVirPX5rczRO" value="self.presion_prom=0&#10;for dato in self.datos:&#10;  self.presion_prom+=dato.get_Presion()&#10;&#10;self.presion_prom/=len(self.datos)&#10;return self.presion_prom"/>
+      </codegenerator>
+    </codegeneration>
+  </xmi:Extension>
+</xmi:XMI>
