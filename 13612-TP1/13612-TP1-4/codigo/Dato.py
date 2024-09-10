@@ -11,6 +11,3 @@ class Dato:
 		return self._Humedad
 	def __str__(self):
 		return f"Temperatura: {self._Temperatura}, Presion: {self._Presion}, Humedad: {self._Humedad}"
-
-
-
