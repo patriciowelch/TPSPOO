@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://schema.omg.org/spec/UML/2.1">
+  <xmi:Documentation exporter="umbrello uml modeller 2.38.70-72802bb (experimental) (Applications 24.11.70) http://umbrello.kde.org" exporterVersion="2.0.4"/>
+  <uml:Model xmi:id="m1" name="UML Model">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="folder" name="folder"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="dataType" name="dataType"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="constructor" name="constructor"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="class-or-package" name="class-or-package"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Logical_View" name="Logical View" stereotype="folder">
+      <uml:Package xmi:id="Datatypes" name="Datatypes" stereotype="folder">
+        <packagedElement xmi:type="uml:DataType" xmi:id="uHjfvFdNvihFW" name="char" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u9yNqsOqZhzwl" name="int"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uByseO1NMojG2" name="float"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uAjmloLrP10TE" name="double" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uSKAvWqRi06St" name="bool"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uf7OQqgr6Fnvv" name="string" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u6Z7wqaTa4uNc" name="unsigned char" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uPhbEgqkaDh4k" name="signed char" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uzNhnEVfU6dv5" name="unsigned int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u0EiD9JsR9j9M" name="signed int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ua2cerXhCZxOh" name="short int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="us8lok8CVqNI3" name="unsigned short int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uv0sBuMLmP60l" name="signed short int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uj8SPCCEOUnJq" name="long int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uwI24ddqStv33" name="signed long int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uk4Emnuoohgfq" name="unsigned long int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uttCWSO55Hy0B" name="long double" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uEMvBQWHn2FKT" name="wchar_t" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uG8ceKpzqHZz6" name="array" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u8xj2xGzcBtwr" name="tuple" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uPAHgqGrZhT6J" name="list" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uMtaO9DMdxjs2" name="long" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ulBSaFpQIPnPh" name="dict" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uvJ6QCUNkSMQE" name="object" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uU1JqHsefVZ5V" name="set" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u96UU5e98WKsd" name="str" stereotype="dataType"/>
+      </uml:Package>
+      <packagedElement xmi:type="uml:Class" xmi:id="uf4PpmEiLuTIK" name="cli">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uWGGTNgFXH3CP" name="__init__" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="udAbDhcQtGZo7" name="control" visibility="private" type="uJbhaNUUpkgAl" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uYVjjn2PE54EU" name="menu">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uZyTqFlHqvphw" type="u96UU5e98WKsd" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uZfb5SD6tQtvt" name="conectar"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uXjsLN7WjUxgY" name="ingresar_parametros"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uORbcca6fsKlS" name="cerrar">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uwNOYofievzFG" type="u9yNqsOqZhzwl" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uJbhaNUUpkgAl" name="Control">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ur0obgiYvMqZw" name="baudrate" visibility="protected" type="uvJ6QCUNkSMQE" initialValue="None"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u5FnBX3Qk5YGW" name="timeout" visibility="protected" type="uvJ6QCUNkSMQE" initialValue="None"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uDtIxOKAnYcuq" name="serial" visibility="protected" type="uFDot9Bkqjms1" initialValue="()"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uojNsKdEQ1y1l" name="__init__" stereotype="constructor"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uuyKiiumFoYVI" name="set_parametros">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uOH39404AcXa1" name="puerto" visibility="private" type="u96UU5e98WKsd" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uCfPdAJOGC631" name="baudrate" visibility="private" type="u9yNqsOqZhzwl" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uaJzi0zEpTq9i" name="timeout" visibility="private" type="uByseO1NMojG2" value="1"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uolO1kKhhat0H" name="iniciar_conexion"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="usjibkS6zDebs" name="cortar_conexion"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uCYA3bzmzstf5" name="recibir_datos_en" comment="limpiar buffer">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uqMAekdf6fSrD" type="u96UU5e98WKsd" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uHbJ57DVBLudM" name="tipo" visibility="private" type="u96UU5e98WKsd" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u9NNN9AVL6BEo" name="escribir_datos_en">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="udtfSURy45voB" name="tipo" visibility="private" type="u96UU5e98WKsd" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u6BPH6aLVmlQm" name="nombre_archivo" visibility="private" type="u96UU5e98WKsd" value=""/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uj9RVp16kwpQk" name="serial" stereotype="class-or-package">
+        <packagedElement xmi:type="uml:Class" xmi:id="uFDot9Bkqjms1" name="Serial"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="u7v1GsV37MW4R" name="">
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uDuXyGicKP9qV" name="" type="uf4PpmEiLuTIK" aggregation="aggregate" isNavigable="true" changeability="changeable"/>
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="upX4POV7bJQ1f" name="" type="uJbhaNUUpkgAl" aggregation="none" isNavigable="true" changeability="changeable"/>
+      </packagedElement>
+      <xmi:Extension extender="umbrello">
+        <diagrams resolution="96">
+          <diagram xmi.id="uHnS9clsFxwfU" name="class diagram" type="1" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffc0" font="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showdocumentation="0" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="100" canvasheight="800" canvaswidth="1100" isopen="1">
+            <widgets>
+              <classwidget xmi.id="uf4PpmEiLuTIK" localid="uvecPNtAwA28N" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" autoresize="1" x="354" y="283" width="215" height="84" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601" showdocumentation="0"/>
+              <classwidget xmi.id="uJbhaNUUpkgAl" localid="uufQN39gHD5YL" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" autoresize="1" x="297" y="430" width="328" height="130" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601" showdocumentation="0"/>
+            </widgets>
+            <messages/>
+            <associations>
+              <assocwidget xmi.id="u7v1GsV37MW4R" localid="ufdp31i4xPncA" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="501" widgetaid="uf4PpmEiLuTIK" widgetbid="uJbhaNUUpkgAl" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="461.376" starty="367"/>
+                  <endpoint endx="461.191" endy="430"/>
+                </linepath>
+              </assocwidget>
+            </associations>
+          </diagram>
+        </diagrams>
+      </xmi:Extension>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="Use_Case_View" name="Use Case View" stereotype="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Component_View" name="Component View" stereotype="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Deployment_View" name="Deployment View" stereotype="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Entity_Relationship_Model" name="Entity Relationship Model" stereotype="folder"/>
+  </uml:Model>
+  <xmi:Extension extender="umbrello">
+    <docsettings viewid="uHnS9clsFxwfU" documentation="" uniqueid="upX4POV7bJQ1f"/>
+    <listview>
+      <listitem id="Views" type="800" open="1">
+        <listitem id="Component_View" type="821" open="1"/>
+        <listitem id="Deployment_View" type="827" open="1"/>
+        <listitem id="Entity_Relationship_Model" type="836" open="1"/>
+        <listitem id="Logical_View" type="801" open="1">
+          <listitem id="uHnS9clsFxwfU" type="807" label="class diagram" open="0"/>
+          <listitem id="uf4PpmEiLuTIK" type="813" open="0">
+            <listitem id="uWGGTNgFXH3CP" type="815" open="0"/>
+            <listitem id="uORbcca6fsKlS" type="815" open="0"/>
+            <listitem id="uZfb5SD6tQtvt" type="815" open="0"/>
+            <listitem id="uXjsLN7WjUxgY" type="815" open="0"/>
+            <listitem id="uYVjjn2PE54EU" type="815" open="0"/>
+          </listitem>
+          <listitem id="uJbhaNUUpkgAl" type="813" open="0">
+            <listitem id="uojNsKdEQ1y1l" type="815" open="0"/>
+            <listitem id="ur0obgiYvMqZw" type="814" open="0"/>
+            <listitem id="usjibkS6zDebs" type="815" open="0"/>
+            <listitem id="u9NNN9AVL6BEo" type="815" open="0"/>
+            <listitem id="uolO1kKhhat0H" type="815" open="0"/>
+            <listitem id="uCYA3bzmzstf5" type="815" open="0"/>
+            <listitem id="uDtIxOKAnYcuq" type="814" open="0"/>
+            <listitem id="uuyKiiumFoYVI" type="815" open="0"/>
+            <listitem id="u5FnBX3Qk5YGW" type="814" open="0"/>
+          </listitem>
+          <listitem id="Datatypes" type="830" open="0">
+            <listitem id="uG8ceKpzqHZz6" type="829" open="1"/>
+            <listitem id="uSKAvWqRi06St" type="829" open="1"/>
+            <listitem id="ulBSaFpQIPnPh" type="829" open="1"/>
+            <listitem id="uByseO1NMojG2" type="829" open="1"/>
+            <listitem id="u9yNqsOqZhzwl" type="829" open="1"/>
+            <listitem id="uMtaO9DMdxjs2" type="829" open="1"/>
+            <listitem id="u96UU5e98WKsd" type="829" open="1"/>
+            <listitem id="u8xj2xGzcBtwr" type="829" open="1"/>
+          </listitem>
+          <listitem id="uj9RVp16kwpQk" type="813" open="0">
+            <listitem id="uFDot9Bkqjms1" type="813" open="0"/>
+          </listitem>
+        </listitem>
+        <listitem id="Use_Case_View" type="802" open="1"/>
+      </listitem>
+    </listview>
+    <codegeneration>
+      <codegenerator language="Python">
+        <sourcecode id="uWGGTNgFXH3CP" value="self._control=control&#10;while True:&#10;  if self.menu()==0:&#10;    break&#10;&#10;&#10;"/>
+        <sourcecode id="uYVjjn2PE54EU" value="print()&#10;print(&quot;1. Ingresar Parametros&quot;)&#10;print(&quot;2. Iniciar ConexiÃ³n&quot;)&#10;print(&quot;3. Recibir Datos y Ver&quot;)&#10;print(&quot;4. Recibir Datos y Escribir&quot;)&#10;print(&quot;5. Salir&quot;)&#10;opcion=input(&quot;Ingrese una opcion: &quot;)&#10;try:&#10;  if opcion==&quot;1&quot;:&#10;    self.ingresar_parametros()&#10;&#10;  elif opcion==&quot;2&quot;:&#10;    self.conectar()&#10;&#10;  elif opcion==&quot;3&quot;:&#10;    self.recibir_datos()&#10;&#10;  elif opcion==&quot;4&quot;:&#10;    self.recibir_datos(True)&#10;&#10;  elif opcion==&quot;5&quot;:&#10;    return self.cerrar()&#10;&#10;&#10;except Exception as e:&#10;  print(e)&#10;  print(&quot;AcciÃ³n no realizada, vuelva a intentar&quot;)&#10;&#10;"/>
+        <sourcecode id="uZfb5SD6tQtvt" value="print(&quot;Conectando...&quot;)&#10;self._control.iniciar_conexion()&#10;pass&#10;"/>
+        <sourcecode id="uXjsLN7WjUxgY" value="formato=input(&quot;Ingrese el formato a recibir: &quot;)&#10;print(&quot;Recibiendo datos...&quot;)&#10;if escritura:&#10;  nombre_archivo=input(&quot;Ingrese el nombre del archivo: &quot;)&#10;  self._control.escribir_datos_en(formato,nombre_archivo)&#10;&#10;else:&#10;  print(self._control.recibir_datos_en(formato))&#10;&#10;pass&#10;"/>
+        <sourcecode id="uORbcca6fsKlS" value="print(&quot;Cerrando...&quot;)&#10;self._control.cortar_conexion()&#10;return 0"/>
+        <sourcecode id="uojNsKdEQ1y1l" value="self._puerto=None&#10;self._baudrate=None&#10;self._timeout=None&#10;self._serial=serial.Serial()&#10;"/>
+        <sourcecode id="uuyKiiumFoYVI" value="if puerto==&quot;&quot;or baudrate==&quot;&quot;:&#10;  raise Exception(&quot;Error: Puerto y Baudrate no pueden ser vacios&quot;)&#10;&#10;self._puerto=puerto&#10;self._baudrate=baudrate&#10;self._timeout=timeout&#10;pass&#10;"/>
+        <sourcecode id="uolO1kKhhat0H" value="if self._serial.is_open==False:&#10;  self._serial=serial.Serial(self._puerto,self._baudrate,timeout=self._timeout)&#10;&#10;pass&#10;"/>
+        <sourcecode id="usjibkS6zDebs" value="self._serial.close()&#10;pass"/>
+        <sourcecode id="uCYA3bzmzstf5" value="if self._serial.is_open==False:&#10;  raise Exception(&quot;Error: No se ha iniciado la conexiÃ³n&quot;)&#10;&#10;if tipo not in[&quot;x&quot;,&quot;j&quot;,&quot;c&quot;]:&#10;  raise Exception(&quot;Error: Formato no vÃ¡lido&quot;)&#10;&#10;while self._serial.in_waiting&gt;0:&#10;  self._serial.readline()&#10;&#10;self._serial.write(tipo.encode())&#10;texto=&quot;&quot;&#10;while self._serial.in_waiting==0:&#10;  pass&#10;&#10;while self._serial.in_waiting&gt;0:&#10;  texto+=self._serial.readline().decode()&#10;&#10;return texto&#10;"/>
+        <sourcecode id="u9NNN9AVL6BEo" value="if self._serial.is_open==False:&#10;  raise Exception(&quot;Error: No se ha iniciado la conexiÃ³n&quot;)&#10;&#10;if tipo not in[&quot;x&quot;,&quot;j&quot;,&quot;c&quot;]:&#10;  raise Exception(&quot;Error: Formato no vÃ¡lido&quot;)&#10;&#10;while self._serial.in_waiting&gt;0:&#10;  self._serial.readline()&#10;&#10;self._serial.write(tipo.encode())&#10;with open(&quot;C://Users//pato//Documents//UNIVERSIDAD//8S//POO//TPSPOO//13612-TP2//13612-TP2-1//anexo//&quot;+nombre_archivo+&quot;.csv&quot;,&quot;a&quot;)as archivo:&#10;  archivo.write(self.recibir_datos_en(&quot;c&quot;))&#10;&#10;pass&#10;"/>
+      </codegenerator>
+    </codegeneration>
+  </xmi:Extension>
+</xmi:XMI>
